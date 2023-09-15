@@ -30,7 +30,7 @@ const App = () => {
       <Route path="/auth/kakao" exact={true} element={<KakaoCallback />} />
       
       {/* 회원가입페이지 */}
-      <Route path="/regist" exact={true} element={<RegisterPage />} />
+      <Route path="/register" exact={true} element={<RegisterPage />} />
       
       {/* 마이페이지 */}
       <Route path="/myInfo" exact={true} element={<MyInfoPage />} />

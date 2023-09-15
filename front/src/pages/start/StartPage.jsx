@@ -14,7 +14,9 @@ const StartPage = () => {
     <div style={{marginTop:'50px'}}>
 <StartTopSection/>
     </div>
+    <div style={{marginTop:'5px'}}>
 <StartMidSection/>
+    </div>
 <StartCategorySection />
 <StartBottomSection />
 <Footer />

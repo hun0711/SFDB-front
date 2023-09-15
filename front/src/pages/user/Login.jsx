@@ -221,7 +221,7 @@ const Login = () => {
             회원 로그인
           </Typography>
           <Typography variant="body2" align="center">
-            <Link href="/regist" underline="always">
+            <Link href="/register" underline="always">
               아직 계정이 없으신가요?
             </Link>
           </Typography>
