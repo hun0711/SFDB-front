@@ -17,6 +17,7 @@
     "date-fns": "^2.30.0",
     "dayjs": "^1.11.9",
     "firebase": "^10.2.0",
+    "firebase-tools": "^12.5.4",
     "gapi-script": "^1.2.0",
     "http-proxy-middleware": "^2.0.6",
     "jquery": "^3.7.0",
@@ -68,6 +69,7 @@
     "proxy": [
       "http://localhost:3000",
       "http://imgnews.naver.net"
-    ]
+    ],
+    "homepage": "https://sfdb-front.web.app"
   }
 }
