@@ -36,7 +36,7 @@ export const releaseSoonMovieDB = async () => {
 export const todayBoxofficeDB = async () => {
   try {
     const res = await axios.get(
-      `http://localhost:8000/movie/todayBoxofficeRank`
+      `http://106.10.41.84:1567/movie/todayBoxofficeRank`
     );
     console.log(res.data);
     return res.data;
@@ -120,7 +120,6 @@ export const directorInfoByNameDB = async (directorNm) => {
   }
 };
 
-
 export const BoxOfficeDetailDB = async (movieId, movieSeq) => {
   try {
     const res = await axios.get(`http://localhost:8000/movie/boxofficeDetail`, {
@@ -136,4 +135,3 @@ export const BoxOfficeDetailDB = async (movieId, movieSeq) => {
     throw error;
   }
 };
-
