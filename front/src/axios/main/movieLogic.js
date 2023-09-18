@@ -3,7 +3,7 @@ import qs from "qs";
 
 export const top20sfmoviesDB = async () => {
   try {
-    const res = await axios.get(`http://localhost:8000/movie/top20SfMovie`);
+    const res = await axios.get(`http://101.101.219.216:1567/movie/top20SfMovie`);
     console.log(res.data);
     return res.data;
   } catch (error) {
@@ -14,7 +14,7 @@ export const top20sfmoviesDB = async () => {
 
 export const recommendMoviesDB = async () => {
   try {
-    const res = await axios.get(`http://localhost:8000/movie/recommendMovie`);
+    const res = await axios.get(`http://101.101.219.216:1567/movie/recommendMovie`);
     console.log(res.data);
     return res.data;
   } catch (error) {
@@ -25,7 +25,7 @@ export const recommendMoviesDB = async () => {
 
 export const releaseSoonMovieDB = async () => {
   try {
-    const res = await axios.get("http://localhost:8000/movie/releaseSoonMovie");
+    const res = await axios.get("http://101.101.219.216:1567/movie/releaseSoonMovie");
     return res.data;
   } catch (error) {
     console.log(error);
@@ -36,7 +36,7 @@ export const releaseSoonMovieDB = async () => {
 export const todayBoxofficeDB = async () => {
   try {
     const res = await axios.get(
-      `http://106.10.41.84:1567/movie/todayBoxofficeRank`
+      `http://101.101.219.216:1567/movie/todayBoxofficeRank`
     );
     console.log(res.data);
     return res.data;
@@ -48,7 +48,7 @@ export const todayBoxofficeDB = async () => {
 
 export const ottExistanceDB = async (movieSeq) => {
   try {
-    const res = await axios.get(`http://localhost:8000/movie/ottExistance`, {
+    const res = await axios.get(`http://101.101.219.216:1567/movie/ottExistance`, {
       params: {
         movieSeq: movieSeq,
       },
@@ -64,7 +64,7 @@ export const ottExistanceDB = async (movieSeq) => {
 export const updateBoxofficeDB = async () => {
   try {
     const res = await axios.post(
-      `http://localhost:8000/api/movies/updateBoxoffice`
+      `http://101.101.219.216:1567/api/movies/updateBoxoffice`
     );
     return res;
   } catch (error) {
@@ -75,7 +75,7 @@ export const updateBoxofficeDB = async () => {
 
 export const movieDetailDB = async (movieId, movieSeq) => {
   try {
-    const res = await axios.get(`http://localhost:8000/movie/movieDetail`, {
+    const res = await axios.get(`http://101.101.219.216:1567/movie/movieDetail`, {
       params: {
         movieId: movieId,
         movieSeq: movieSeq,
@@ -91,7 +91,7 @@ export const movieDetailDB = async (movieId, movieSeq) => {
 
 export const directorInfoDB = async (directorIds) => {
   try {
-    const res = await axios.get(`http://localhost:8000/movie/directorsInfo`, {
+    const res = await axios.get(`http://101.101.219.216:1567/movie/directorsInfo`, {
       params: {
         directorId: directorIds,
       },
@@ -108,7 +108,7 @@ export const directorInfoDB = async (directorIds) => {
 
 export const directorInfoByNameDB = async (directorNm) => {
   try {
-    const res = await axios.get(`http://localhost:8000/movie/directorsInfo`, {
+    const res = await axios.get(`http://101.101.219.216:1567/movie/directorsInfo`, {
       params: {
         directorNm: directorNm,
       },
@@ -122,7 +122,7 @@ export const directorInfoByNameDB = async (directorNm) => {
 
 export const BoxOfficeDetailDB = async (movieId, movieSeq) => {
   try {
-    const res = await axios.get(`http://localhost:8000/movie/boxofficeDetail`, {
+    const res = await axios.get(`http://101.101.219.216:1567/movie/boxofficeDetail`, {
       params: {
         movieId: movieId,
         movieSeq: movieSeq,

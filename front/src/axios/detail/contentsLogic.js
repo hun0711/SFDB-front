@@ -4,7 +4,7 @@ export const insertMovieCommentDB = async (commentData) => {
   console.log(commentData);
   try {
     const res = await axios.post(
-      "http://localhost:8000/contents/movieDetail/insertMovieComment",
+      "http://101.101.219.216:1567/contents/movieDetail/insertMovieComment",
       commentData
     );
     return res.data;
@@ -18,7 +18,7 @@ export const updateMovieCommentDB = async (commentData) => {
   console.log(commentData);
   try {
     const res = await axios.post(
-      "http://localhost:8000/contents/movieDetail/updateMovieComment",
+      "http://101.101.219.216:1567/contents/movieDetail/updateMovieComment",
       commentData
     );
     console.log(res.data);
@@ -33,7 +33,7 @@ export const deleteMovieCommentDB = async (commentData) => {
   console.log(commentData);
   try {
     const res = await axios.post(
-      "http://localhost:8000/contents/movieDetail/deleteMovieComment",
+      "http://101.101.219.216:1567/contents/movieDetail/deleteMovieComment",
       commentData
     );
     return res.data;
@@ -46,7 +46,7 @@ export const deleteMovieCommentDB = async (commentData) => {
 export const getMovieCommentDB = async (movieId, movieSeq) => {
   try {
     const res = await axios.get(
-      "http://localhost:8000/contents/movieDetail/getMovieComment",
+      "http://101.101.219.216:1567/contents/movieDetail/getMovieComment",
       {
         params: {
           movieId: movieId,
@@ -65,7 +65,7 @@ export const getMovieCommentDB = async (movieId, movieSeq) => {
 export const getUserMovieCommentDB = async (movieId, movieSeq, userId) => {
   try {
     const res = await axios.get(
-      "http://localhost:8000/contents/movieDetail/getUserMovieComment",
+      "http://101.101.219.216:1567/contents/movieDetail/getUserMovieComment",
       {
         params: {
           movieId: movieId,
@@ -87,7 +87,7 @@ export const addToArchiveDB = async (archiveData) => {
   console.log(archiveData);
   try {
     const res = await axios.post(
-      "http://localhost:8000/contents/archive/addToArchive",
+      "http://101.101.219.216:1567/contents/archive/addToArchive",
       archiveData
     );
     return res.data;
@@ -101,7 +101,7 @@ export const deleteToArchiveDB = async (archiveData) => {
   console.log(archiveData);
   try {
     const res = await axios.post(
-      "http://localhost:8000/contents/archive/deleteToArchive",
+      "http://101.101.219.216:1567/contents/archive/deleteToArchive",
       archiveData
     );
     return res.data;
@@ -114,7 +114,7 @@ export const deleteToArchiveDB = async (archiveData) => {
 export const checkMovieArchiveDB = async (movieId, movieSeq ,userId) => {
   try {
     const res = await axios.get(
-      "http://localhost:8000/contents/archive/checkMovieArchive",
+      "http://101.101.219.216:1567/contents/archive/checkMovieArchive",
       {
         params: {
           movieId: movieId,
@@ -134,7 +134,7 @@ export const checkMovieArchiveDB = async (movieId, movieSeq ,userId) => {
 export const getUserArchiveDB = async (userId) => {
   try {
     const res = await axios.get(
-      "http://localhost:8000/contents/archive/getUserArchive",
+      "http://101.101.219.216:1567/contents/archive/getUserArchive",
       {
         params: {
           userId: userId
