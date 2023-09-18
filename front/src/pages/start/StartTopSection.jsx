@@ -16,7 +16,7 @@ export default function StartTopSection() {
         backgroundPosition: "center",
       }}
     >
-   <video autoPlay loop muted style={{ width: "1500px", height: "650px", marginBottom:'145px' ,objectFit: "cover" , opacity:'60%' }}>
+   <video autoPlay loop muted style={{ width: "1500px", height: "655px", marginBottom:'145px' ,objectFit: "cover" , opacity:'60%' }}>
         <source src={backgroundVideo} type="video/mp4" />
         Your browser does not support the video tag.
       </video>

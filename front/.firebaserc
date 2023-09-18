@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "sfdb-front"
-  }
+    "default": "sfdb-front",
+    "firebase deploy": "sfdb-front"
+  },
+  "targets": {},
+  "etags": {}
 }
