@@ -68,8 +68,9 @@
     ],
     "proxy": [
       "http://localhost:3000",
+      "https://sfdb-front-98c09.web.app",
       "http://imgnews.naver.net"
     ],
-    "homepage": "https://sfdb-front.web.app"
+    "homepage": "https://sfdb-front-98c09.web.app"
   }
 }
