@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const userLoginDB = async (data) => {
   try {
-    const res = await axios.post(`http://101.101.219.216:1567/user/login`, data);
+    const res = await axios.post(`https://101.101.219.216:8443/user/login`, data);
     // 서버로부터 받은 응답 데이터를 반환합니다.
     return res.data;
   } catch (error) {
@@ -14,7 +14,7 @@ export const userLoginDB = async (data) => {
 
 export const userInfoDB = async (userId) => {
   try {
-    const res = await axios.get(`http://101.101.219.216:1567/user/userInfo`, {
+    const res = await axios.get(`https://101.101.219.216:8443/user/userInfo`, {
       params: {
         userId: userId,
       },
@@ -29,7 +29,7 @@ export const userInfoDB = async (userId) => {
 export const googleSocialLogin = async (data) => {
   try {
     const res = await axios.post(
-      "http://101.101.219.216:1567/user/login/google",
+      "https://101.101.219.216:8443/user/login/google",
       data
     );
     return res.data;
@@ -56,7 +56,7 @@ export const googleUserInfo = async (token) => {
 export const naverSocialLogin = async (data) => {
   try {
     const res = await axios.post(
-      "http://101.101.219.216:1567/user/login/naver",
+      "https://101.101.219.216:8443/user/login/naver",
       data
     );
     return res.data;
@@ -68,7 +68,7 @@ export const naverSocialLogin = async (data) => {
 
 export const kakaoSocialLogin = async (data) => {
   try {
-    const res = await axios.post("http://101.101.219.216:1567/user/login/kakao", {
+    const res = await axios.post("https://101.101.219.216:8443user/login/kakao", {
       ...data,
     });
     return res.data;

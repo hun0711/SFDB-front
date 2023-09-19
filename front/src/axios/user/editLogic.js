@@ -5,7 +5,7 @@ export const changeUserNameDB = async (requestData) => {
   console.log(requestData);
   try {
     const res = await axios.post(
-      `http://101.101.219.216:1567/user/changeUserName`,
+      `https://101.101.219.216:8443/user/changeUserName`,
       requestData
     );
     return res.data;
@@ -20,7 +20,7 @@ export const updateProfileImageDB = async (requestData) => {
   console.log(requestData);
   try {
     const res = await axios.post(
-      `http://101.101.219.216:1567/user/updateProfileImage`,
+      `https://101.101.219.216:8443/user/updateProfileImage`,
       requestData
     );
     return res.data;
@@ -35,7 +35,7 @@ export const changePwDB = async (requestData) => {
   console.log(requestData);
   try {
     const res = await axios.post(
-      `http://101.101.219.216:1567/user/changePw`,
+      `https://101.101.219.216:8443/user/changePw`,
       requestData
     );
     return res.data;

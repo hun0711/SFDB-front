@@ -3,7 +3,7 @@ import axios from "axios";
 //ID 중복체크 axios 로직
 export const idCheckDB = async (id) => {
   try {
-    const res = await axios.get(`http://101.101.219.216:1567/register/idCheck`, {
+    const res = await axios.get(`https://101.101.219.216:8443/register/idCheck`, {
       params: {
         userId: id,
       },
@@ -24,7 +24,7 @@ export const regInsertDB = (data) => {
     try {
       const response = axios({
         method: "post", //@RequestBody
-        url: "http://101.101.219.216:1567/register/userJoin",
+        url: "https://101.101.219.216:8443/register/userJoin",
         data: data,
       });
       resolve(response);
@@ -38,7 +38,7 @@ export const withdrawUserDB = async (userId) => {
   console.log(userId);
   try {
     const res = await axios.post(
-      `http://101.101.219.216:1567/register/withdraw`,
+      `https://101.101.219.216:8443/register/withdraw`,
       { userId }
     );
     return res.data;

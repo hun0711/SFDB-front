@@ -4,7 +4,7 @@ export const existReleaseNoticeEmailUser = async (userId) => {
   console.log(userId);
   try {
     const res = await axios.get(
-      "http://101.101.219.216:1567/user/existReleaseNoticeEmailUser",{
+      "https://101.101.219.216:8443/user/existReleaseNoticeEmailUser",{
         params : {
           userId : userId
         }})
@@ -19,7 +19,7 @@ export const releaseNoticeEmail = async (requestData) => {
   console.log(requestData);
   try {
     const res = await axios.post(
-      "http://101.101.219.216:1567/user/releaseNoticeEmail",
+      "https://101.101.219.216:8443/user/releaseNoticeEmail",
       requestData
     );
     return res.data;
@@ -33,7 +33,7 @@ export const findId = async (userData) => {
   console.log(userData);
   try {
     const res = await axios.post(
-      "http://101.101.219.216:1567/user/findId",
+      "https://101.101.219.216:8443/user/findId",
       userData
     );
     console.log(res.data);
@@ -48,7 +48,7 @@ export const findPw = async (userData) => {
   console.log(userData);
   try {
     const res = await axios.post(
-      "http://101.101.219.216:1567/user/findPw",
+      "https://101.101.219.216:8443/user/findPw",
       userData
     );
     return res.data;
@@ -61,7 +61,7 @@ export const findPw = async (userData) => {
 export const checkTempPw = async (userId , tempPw) => {
   try {
     const res = await axios.get(
-      "http://101.101.219.216:1567/user/checkTempPw",{
+      "https://101.101.219.216:8443/user/checkTempPw",{
         params:{
           userId : userId,
           tempPw : tempPw

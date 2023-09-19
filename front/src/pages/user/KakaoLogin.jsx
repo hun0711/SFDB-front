@@ -4,7 +4,6 @@ import config from '../../config';
 const KakaoLogin = () => {
   const kakaoRestAPIKey = config.kakaoClientId;
   const kakaoRedirectUri = config.kakaoRedirectUri;
-  console.log(kakaoRedirectUri)
   const kakaoURL = `https://kauth.kakao.com/oauth/authorize?client_id=${kakaoRestAPIKey}&redirect_uri=${kakaoRedirectUri}&response_type=code`;
 
   const handleKakaoLogin = () => {
